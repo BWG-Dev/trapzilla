@@ -1,0 +1,282 @@
+
+/*Sizing Tools shortcode*/
+.timeline-accordion {
+    max-width: 900px; /* Wider accordion */
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+.timeline-accordion-item {
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.timeline-accordion-header {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Open Sans',sans-serif;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #707070;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-accordion-header:hover {
+    background: #eaeaea;
+}
+
+.header-result{
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.step-number {
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-right: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 30px; /* Slightly larger for better visibility */
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    vertical-align: middle;
+    background: #dd7d34;
+}
+.timeline-accordion-content {
+    display: none;
+    padding: 10px 15px;
+    border-left: 1px solid #ccc;
+    margin-left: 30px;
+    margin-top: 20px;
+    background: #fff;
+    min-height: 50px;
+}
+.step-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.step-description img {
+    width: 180px;
+    height: auto;
+    min-width: 230px;
+    max-width: 385px;
+    flex: 1 1 50%;
+}
+.step-description span {
+    min-width: 200px;
+    flex: 1 1 50%;
+    margin-right: 2em;
+}
+.table.therm.sinks {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.table td input,
+.table td select {
+    width: 100px;
+    padding: 5px;
+    margin: 5px;
+}
+.remove-sink {
+    cursor: pointer;
+    color: red;
+}
+.remove-sink[disabled] {
+    color: gray;
+    cursor: not-allowed;
+}
+.button-toolbar {
+    margin-bottom: 1em;
+}
+#add-sink-row, .type-selection-btn {
+    background: #fff;
+    border: 4px solid #dd7d34;
+    color: #dd7d34;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+#add-sink-row:hover {
+    background-color: #ccc;
+}
+.sizing-tool-step-5 .select-box {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sizing-tool-step-5 .select-box:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sizing-tool-step-5 .select-box input[type="radio"] {
+    display: none;
+}
+
+.sizing-tool-step-5 .select-box label {
+    display: block;
+    cursor: pointer;
+}
+
+.sizing-tool-step-5 .select-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.sizing-tool-step-5 .desc-cell {
+    margin-top: 0.5rem;
+}
+
+.timeline-accordion th{
+    background: #dd7d34 !important;
+    color: white;
+}
+
+.step-actions{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.timeline-accordion tr{
+    font-size: 13px !important;
+    font-family: "PT Sans",sans-serif !important;
+}
+
+#sink-rows select, #sink-rows input{
+    width: 50px;
+}
+
+.grease-output label{
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.grease-output select{
+    width: 100%;
+    background: #e9e3dd;
+    border: 1px solid #a1acba;
+    font-size: 13px;
+}
+
+.installation_type input[type="radio"]{
+    display: none;
+}
+
+.installation_type label{
+    padding: 10px;
+}
+
+.installation_type label img{
+    height: 200px;
+    margin: 0 auto;
+}
+.installation_type label p{
+    font-size: 13px;
+}
+.installation_type label h5{
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #707070;
+}
+
+
+
+
+.installation_type input[type="radio"]:checked + label {
+    outline: 1px solid #dd7d34;
+    border-radius: 5px;
+}
+
+.next-step{
+    float: right;
+}
+
+span.inches{
+    font-weight: bold;
+}
+
+.decrement_btn, .increment_btn{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+table.fixtures input{
+    width: 40px;
+    text-align: center;
+}
+table.fixtures input[type=number]::-webkit-inner-spin-button,
+table.fixtures input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+table.fixtures input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.product-display {
+    text-align: center;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 200px;
+}
+
+.product-display .sku {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image_qty_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image_qty_wrapper .image{
+    margin-right: 20px;
+}
+
+.product-display .button {
+    display: inline-block;
+
+}
+
+.qty_pre{
+    width: 45%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#add_to_cart_all_form{
+    display: block;
+    margin: 20px auto;
+}
+
+.fixtures-input{
+    border: 0 !important;
+    cursor: none;
+    width: 100px !important;
+}
+
+.sub-heading-tool{
+    font-size: 20px;
+}
