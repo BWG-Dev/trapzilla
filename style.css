@@ -1,0 +1,222 @@
+/*
+Theme Name:     Trapzilla
+Theme URI:      https://welldressedwalrus.com/
+Template:       kadence
+Author:         Well Dressed Walrus
+Author URI:     https://welldressedwalrus.com/
+Description:    A Custom Theme from Well Dressed Walrus for your website.
+Version:        1.2
+License:        GNU General Public License v3.0 (or later)
+License URI:    https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: kadence-child
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+/************************************ Everything *************************************/
+
+/*** Subpage hyperlink color according to subpage design ****/
+
+a.subpage-hyperlink {
+	color: var(--global-palette1);
+}
+
+
+a.subpage-hyperlink:hover {
+	color: var(--global-palette3);
+}
+
+.max-width-450 {
+	max-width: 450px;
+}
+
+/****** Accordion shadow off and icon spacing ******/
+
+.kt-accordion-header-wrap button:focus {
+	box-shadow: none !important;
+}
+
+.kt-accordion-header-wrap .kt-btn-side-left {
+    padding-right: 1em !important;
+}
+
+/*** Make menu item unclickable ***/
+.unclickable > a {
+	pointer-events: none;
+	cursor: default;
+  }
+
+/************************************ Header *************************************/
+
+/***** Upper Socket *****/
+
+.socket-phone {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 700;
+}
+
+.socket-phone::before {
+	content: '';
+	display: inline-flex;
+	background: url(/wp-content/uploads/2024/11/phone-icon.png) no-repeat;
+	height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    padding: 7px 0px;
+}
+
+/***** Pipe between menu items ****/
+#menu-item-46,
+#menu-item-47 {display: inline-flex;}
+
+#menu-item-46::after,
+#menu-item-47::after{
+	content: '';
+	border-right: 1px solid white;
+	    margin: 10px 4px;
+}
+
+.menu-button {
+	font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+	color: var(--global-palette9);
+    text-transform: uppercase;
+	text-decoration: none !important;
+    border-radius: 0px;
+    padding: 8px 20px;
+    border: 2px solid currentColor;
+    border-color: var(--global-palette1);
+    box-shadow: 0px 0px 0px -7px rgba(0, 0, 0, 0);
+	background-color: var(--global-palette1);
+	margin-left: 10px;
+}
+
+.menu-button:hover {
+	color: var(--global-palette9);
+	background-color: var(--global-palette2);
+	border-color: var(--global-palette2)
+}
+
+/************************************ Footer *************************************/
+
+.footer-cta-contact-link a {
+	color: var(--global-palette9);
+	text-decoration: underline;
+}
+
+.footer-cta-contact-link a:hover {
+	color: var(--global-palette8);
+}
+
+#nav_menu-3 li a,
+#nav_menu-4 li a,
+#nav_menu-5 li a,
+#nav_menu-6 li a,
+#nav_menu-7 li a,
+#nav_menu-8 li a,
+#nav_menu-9 li a {
+	line-height: 1.6;
+	padding: 0.4em 0;
+}
+
+/************************************ Homepage *************************************/
+
+/* Key Points Section */
+.easy-install .info-box-link{ padding-left: 45px; }
+
+/* Product Section */
+.product-section .kt-divider{ transform: unset !important; }
+.product-section .wp-block-kadence-advancedheading + p{ min-height: 145px; }
+
+/* Partner Section */
+.partner-section ul{ align-items: center; }
+
+/* Resources Section */
+.resources-section .kt-blocks-info-box-learnmore:hover{ background: #0076c0 !important; color: #fff; }
+
+/************************************ Homepage Mobile *************************************/
+@media screen and (min-width:1199px){
+	/* Grease Removal Section */
+	.two-column-list ul{ display: flex !important; flex-wrap: wrap; }
+	.two-column-list ul > li{ width: 50%; flex: 0 0 50%; }
+}
+@media screen and (min-width: 1025px) and (max-width:1279px){
+	/* 	Resources Section */
+	.resources-section .kt-blocks-info-box-title{ font-size: 22px !important; min-height: 75px; margin: 0 !important; }
+}
+@media screen and (max-width:1279px){
+	/* Key Points Section */
+	.easy-install .info-box-link{ padding-left: 0; }
+}
+@media screen and (max-width: 767px){
+	/* Product Section */
+	.product-section .wp-block-kadence-advancedheading + p{ min-height: 0 !important; }
+
+	/* 	Two Column GRID Layout */
+	.reverse-column .mobile-order{ order: -1; }
+}
+
+
+/************************************ Find a Rep US *************************************/
+.table-reform thead {
+	background-color: var(--global-palette2);
+	color: var(--global-palette9);
+}
+
+.table-reform table {
+	border: 1px solid var(--global-palette8);
+}
+
+.table-reform td, th {
+	border-right: 1px solid var(--global-palette8) !important;
+	padding: 8px;
+	text-align: center !important;
+}
+
+.table-reform td:last-child, th:last-child {
+ 	border-right: none;
+ 	text-align: center;
+}
+
+.table-reform.wp-block-table {
+  border-radius: 15px;
+}
+
+
+/************************************ Subpage *************************************/
+
+.recent-posts li {
+	margin: 40px 0;
+}
+
+.table-borderless table {
+	border-spacing: 10px;
+}
+
+.table-borderless td {
+	vertical-align: top;
+	padding: 20px 0 !important;
+}
+
+.green-text {
+	color: #41B629;
+}
+
+/************************************ Subpage *************************************/
+
+/************************************ Mobile *************************************/
+
+@media (max-width: 768px) {
+.mobile-left {
+	text-align: left !important;
+	}
+}
+
+/************************************ ADA *************************************/
+
+}
+
